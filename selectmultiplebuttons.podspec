@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "SelectMultipleButtons"
+  s.name         = "selectmultiplebuttons"
   s.version      = "0.0.1"
   s.summary      = "A grouped buttons supporting multiple/radio selection and automatic layout."
 
