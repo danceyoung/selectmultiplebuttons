@@ -8,7 +8,7 @@
 
 import UIKit
 
-@objc protocol SelectMultipleButtonsDelegate {
+@objc public protocol SelectMultipleButtonsDelegate {
     // how many buttons are returnd
     func numberOf(selectMultipleButtons: SelectMultipleButtons) -> Int
     
@@ -31,7 +31,7 @@ import UIKit
     @objc optional func indexesSelectedOf(selectMultipleButtons: SelectMultipleButtons, didChange indexes: [Int]) -> Void
 }
 
-class StyleConfig: NSObject {
+public class StyleConfig: NSObject {
     fileprivate var edgeSpace = EdgeSpace()
     fileprivate var betweenSpace = BetweenSpace()
     fileprivate var systemFontSize: CGFloat = 18
@@ -44,7 +44,7 @@ class StyleConfig: NSObject {
     
 }
 
-class EdgeSpace {
+public class EdgeSpace {
     var top: CGFloat = 10.0
     var leading: CGFloat = 10.0
     var bottom: CGFloat = 10.0
@@ -69,7 +69,7 @@ class EdgeSpace {
     }
 }
 
-class BetweenSpace {
+public class BetweenSpace {
     var horizontalSpace: CGFloat = 5
     var verticalSpace:CGFloat = 5
     
@@ -89,7 +89,7 @@ class BetweenSpace {
     
 }
 
-class SelectMultipleButtons: UIView {
+public class SelectMultipleButtons: UIView {
     
     private var baseTagValue = 1000
     private var maximumNumberSelected = Int.max
