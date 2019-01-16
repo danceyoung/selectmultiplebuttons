@@ -93,7 +93,7 @@ public class SelectMultipleButtons: UIView {
     
     private var baseTagValue = 1000
     private var maximumNumberSelected = Int.max
-    var delegate: SelectMultipleButtonsDelegate?
+    public var delegate: SelectMultipleButtonsDelegate?
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
