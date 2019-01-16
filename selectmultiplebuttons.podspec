@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "selectmultiplebuttons"
+  s.name         = "SelectMultipleButtons"
   s.version      = "0.0.1"
   s.summary      = "A grouped buttons supporting multiple/radio selection and automatic layout."
 
@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  A grouped buttons supporting multiple/radio selection and automatic layout. tag 
                    DESC
 
   s.homepage     = "https://github.com/danceyoung/selectmultiplebuttons"
@@ -56,7 +57,7 @@ Pod::Spec.new do |s|
   # Or just: s.author    = "Young"
   # s.authors            = { "Young" => "danceyoung@hotmail.com" }
   # s.social_media_url   = "http://twitter.com/Young"
-
+  s.swift_version = '4.0'
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
@@ -90,7 +91,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "selectmultiplebuttons/selectmultiplebuttons/SelectMultipleButtons.swift", "selectmultiplebuttons/selectmultiplebuttons/ExtensionUIButton.swift"
+  s.source_files  = "selectmultiplebuttons/SelectMultipleButtons.swift", "selectmultiplebuttons/ExtensionUIButton.swift"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
