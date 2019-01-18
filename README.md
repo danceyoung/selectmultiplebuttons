@@ -19,7 +19,9 @@ _// how many buttons are returnd_
     **func** buttonOf(selectMultipleButtons: SelectMultipleButtons, atIndex index: Int) -> UIButton
     
 _//set maximumNumber selected_
+
 _//default you can all select buttons_
+
 _//if you set the value is 1, the selectmultiplebuttons will present radio selecting_
 
     **@objc** **optional** **func** maximumNumberSelectedOf(selectMultipleButtons: SelectMultipleButtons) -> Int
