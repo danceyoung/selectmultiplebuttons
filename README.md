@@ -26,7 +26,9 @@ _//if you set the value is 1, the selectmultiplebuttons will present radio selec
 
     **@objc** **optional** **func** maximumNumberSelectedOf(selectMultipleButtons: SelectMultipleButtons) -> Int
 _//config, containnig the blow items_
+
 _//edge's space (top, leading, bottom, trailling)_
+
 _//between space (vertical space and horizontal space between buttons)_
 
     **func** styleConfigOf(selectMultipleButtons: SelectMultipleButtons) -> StyleConfig
