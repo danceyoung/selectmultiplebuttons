@@ -3,7 +3,7 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 # SelectMultipleButtons
-A grouped buttons supporting multiple/radio selection and automatic layout by building with swift.
+A grouped buttons supporting multiple/radio selection and automatic layout by building with swift. https://github.com/danceyoung/react-native-selectmultiple-button for React Native.
 ## Demo  (captured by GIPHY CAPTURE)
 ![
 ](https://github.com/danceyoung/selectmultiplebuttons/blob/master/demo/selectmultiplebuttons-demo.gif?raw=true)
@@ -17,7 +17,7 @@ Edit your podfile
 ## Instruction
 You must adopt the `SelectMultipleButtonsDelegate` protocol. The protocol likes UITableViewDelegate and UITableDatasource, providing information that SelectMultipleButtons need to construct buttons and manage button selection...
 
-_// how many buttons are returnd_
+_// how many buttons are returned_
 
     func numberOf(selectMultipleButtons: SelectMultipleButtons) -> Int
     
@@ -27,7 +27,7 @@ _// how many buttons are returnd_
     
 _//set maximumNumber selected_
 
-_//default you can all select buttons_
+_//default you can select all buttons_
 
 _//if you set the value is 1, the selectmultiplebuttons will present radio selecting_
 
@@ -53,6 +53,7 @@ Import modules
     import selectmultiplebuttons
 
 Init a selectMultipleButtons
+
 _//width is the maxwidth for SelectMultipleButtons view_
 
 _//no care height, after performing SelectMultipleButtons.load(), the height is calced automaticly._
@@ -60,7 +61,7 @@ _//no care height, after performing SelectMultipleButtons.load(), the height is 
 _// you must perform SelectMultipleButtons.load() befor adding it to parent view._
 
     let selectMultipleButtons1 = SelectMultipleButtons.init(frame: CGRect.init(x: 0, y: tip1.frame.origin.y + tip1.frame.height, width: view.frame.width, height: 0))
-    selectMultipleButtons1.delegate = **self**
+    selectMultipleButtons1.delegate = self
     selectMultipleButtons1.load()
     view.addSubview(selectMultipleButtons1)
 
