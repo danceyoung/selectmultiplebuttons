@@ -28,6 +28,7 @@ import UIKit
     //button's singeltap event
     @objc optional func didSingleTapOf(selectMultipleButtons: SelectMultipleButtons, atIndex index: Int) -> Void
     
+    //indexes selected and changed event
     @objc optional func indexesSelectedOf(selectMultipleButtons: SelectMultipleButtons, didChange indexes: [Int]) -> Void
 }
 
