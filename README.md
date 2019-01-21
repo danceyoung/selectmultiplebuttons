@@ -7,6 +7,13 @@ A grouped buttons supporting multiple/radio selection and automatic layout by bu
 ## Demo  (captured by GIPHY CAPTURE)
 ![
 ](https://github.com/danceyoung/selectmultiplebuttons/blob/master/demo/selectmultiplebuttons-demo.gif?raw=true)
+## Installation
+Edit your podfile
+
+    pod 'selectmultiplebuttons', '~> 0.0.3'
+
+## View frames hierarchy
+![enter image description here](https://github.com/danceyoung/selectmultiplebuttons/blob/master/demo/viewframehierarchy.png?raw=true)
 ## Instruction
 You must adopt the `SelectMultipleButtonsDelegate` protocol. The protocol likes UITableViewDelegate and UITableDatasource, providing information that SelectMultipleButtons need to construct buttons and manage button selection...
 
@@ -36,11 +43,15 @@ _//between space (vertical space and horizontal space between buttons)_
    
 
     @objc optional func didSingleTapOf(selectMultipleButtons: SelectMultipleButtons, atIndex index: Int) -> Void
-   _//indexes selected and changed_
+   _//indexes selected and changed event_
    
 
     @objc optional func indexesSelectedOf(selectMultipleButtons: SelectMultipleButtons, didChange indexes: [Int]) -> Void
 ## code snap
+Import modules
+
+    import selectmultiplebuttons
+
 Init a selectMultipleButtons
 _//width is the maxwidth for SelectMultipleButtons view_
 
@@ -78,3 +89,6 @@ Conform required protocol
 	    let betweenSpace = BetweenSpace.init(horizontalSpace: 5, verticalSpace: 5)
 	    return StyleConfig.init(edgeSpace: edgeSpace, betweenSpace: betweenSpace, systemFontSize: 18)
 	}
+
+## License
+selectmultiplebuttons is [MIT licensed](https://github.com/danceyoung/selectmultiplebuttons/blob/master/LICENSE).
