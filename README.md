@@ -10,7 +10,7 @@ A grouped buttons supporting multiple/radio selection and automatic layout by bu
 ## Installation
 Edit your podfile
 
-    pod 'selectmultiplebuttons', '~> 0.0.3'
+    pod 'selectmultiplebuttons', '~> 0.0.4'
 
 ## View frames hierarchy
 ![enter image description here](https://github.com/danceyoung/selectmultiplebuttons/blob/master/demo/viewframehierarchy.png?raw=true)
